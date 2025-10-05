@@ -1,5 +1,4 @@
 import Image from "next/image";
-import bike from "../../public/images/bike.png";
 import BuyForm from "./BuyForm";
 function BikeComponent() {
   return (
@@ -25,7 +24,7 @@ function BikeComponent() {
         </div>
       </div>
       <div className="flex-1 lg:flex hidden">
-        <Image className="2xl:mt-[215px] xl:mt-[200px] lg:mt-[150px] md:mt-[140px]" src={bike} alt="Book Buy Bike" />
+        <img className="2xl:mt-[215px] xl:mt-[200px] lg:mt-[150px] md:mt-[140px]" src="/images/bike.png" alt="Book Buy Bike" />
       </div>
     </div>
   );
