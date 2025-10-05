@@ -16,7 +16,8 @@ function LoginForm({ setShowLogin }: Props) {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.3 }}
-        className="flex flex-col items-center justify-center bg-[#333333]/80 h-[100vh] w-full z-50 absolute top-0 left-0"
+        className="flex flex-col items-center justify-center bg-[#333333]/80 h-[100vh]
+         w-full z-50 absolute top-0 left-0"
       >
         <motion.div
           initial={{ scale: 0.9, opacity: 0, y: 50 }}

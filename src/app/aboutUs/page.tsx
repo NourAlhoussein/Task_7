@@ -9,16 +9,11 @@ function AboutUs() {
     <div>
       {/* section 1 */}
 
-      <div className="2xl:px-[250px] xl:px-[100px] md:px-[50px] px-[15px]">
-        <div className="absolute -z-1 top-0 left-0 md:h-[100vh] h-[160vh] w-full">
-          <Image
-            className="object-cover"
-            src="/images/aboutus.jpg"
-            fill
-            alt="home"
-          />
-        </div>
-        <div className="flex flex-col items-center justify-center w-full md:h-[100vh] h-[160vh]">
+      <div
+        className="2xl:px-[250px] xl:px-[100px] md:px-[50px] px-[15px]
+      md:py-[100px] py-[50px] w-full bg-[url(/images/aboutus.jpg)] bg-cover"
+      >
+        <div className="flex flex-col items-center justify-center w-full">
           <h1 className="2xl:text-7xl text-5xl text-white 2xl:mt-[160px] mt-[100px] text-center Podcast">
             Our team cares about your full relax
           </h1>

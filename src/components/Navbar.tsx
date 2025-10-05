@@ -10,11 +10,12 @@ import { useEffect } from "react";
 
 import LoginForm from "./LoginForm";
 import SignupForm from "./SignupForm";
+import { usePathname } from "next/navigation";
 
 function Navbar() {
   const [showLogin, setShowLogin] = useState(false);
   const [showSignup, setShowSignup] = useState(false);
-  const [active, setActive] = useState<string>("Home");
+  const pathname = usePathname();
   const [openNav, setOpenNav] = useState<boolean>(false);
   const [isOrange, setIsOrange] = useState(false);
   useEffect(() => {
@@ -49,13 +50,10 @@ function Navbar() {
             return (
               <li
                 key={item.id}
-                onClick={() => {
-                  setActive(item.name);
-                }}
               >
                 <Link
                   className={`${
-                    item.name === active ? "border-b-3 border-[#FA8B02]" : ""
+                    pathname === item.href ? "border-b-3 border-[#FA8B02]" : ""
                   } ${isOrange ? "text-[#FA8B02]" : "text-white"}`}
                   href={item.href}
                 >
@@ -135,12 +133,11 @@ function Navbar() {
                 <Link
                   key={item.id}
                   onClick={() => {
-                    setActive(item.name);
                     setOpenNav(!openNav);
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
                   className={`${
-                    item.name === active ? "border-b-2 border-white" : ""
+                    pathname === item.href ? "border-b-2 border-white" : ""
                   }`}
                   href={item.href}
                 >
