@@ -14,7 +14,7 @@ export default function Home() {
       {/* section 1 */}
 
       <div className="2xl:px-[250px] xl:px-[100px] md:px-[50px] px-[15px] md:py-[100px] py-[50px]
-      w-full bg-[url(/images/home.png)] bg-cover">
+      w-full md:h-[100vh] bg-[url(/images/home.png)] bg-cover">
           <div className="flex flex-col items-center justify-center w-full">
             <h1 className="2xl:text-7xl text-5xl text-white 2xl:mt-[160px] mt-[100px] text-center Podcast">
               Enjoy in the best way!

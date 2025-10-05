@@ -23,7 +23,7 @@ function SignupForm({ setShowSignup }: Props) {
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0.9, opacity: 0, y: 50 }}
           transition={{ duration: 0.4 }}
-          className="flex flex-col 2xl:p-[40px] p-[16px] bg-white 2xl:w-[488px] rounded-[24px]"
+          className="flex flex-col 2xl:p-[40px] p-[16px] bg-white xl:w-[488px] rounded-[24px]"
         >
           <div className="flex flex-row items-center justify-between w-full">
             <div className="text-black 2xl:text-[32px] text-xl font-bold">
