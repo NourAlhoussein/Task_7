@@ -30,6 +30,7 @@ body {
   src: url("/fonts/RadialVintage-Free.ttf") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap
 }
 .Podcast{
   font-family:"Podcast";
